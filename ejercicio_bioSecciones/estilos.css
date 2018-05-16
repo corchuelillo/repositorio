@@ -1,0 +1,8 @@
+h2 /* Aplicar un estilo a una etiqueta en concreto */
+ {color:blue;}
+ #primero /* #nombre-id para "llamar un id */
+    {background-color: blanchedalmond;}
+.color_enlace /* .nombre-class para "llamar" un class */
+    {color: crimson;}
+section /* Para aplicar un estilo a todos los div que hayan en la página */
+    {background-color:blanchedalmond;}
