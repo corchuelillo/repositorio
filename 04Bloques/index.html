@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bloques HTML</title>
+</head>
+<body>
+    <header>
+        <h1> Introducción al HTML.
+            <span class="subtitulo">Uso de bloques</span></h1>
+            <style> 
+                .subtitulo {display: block; font-size: 0.8em;}
+                .footer{border-top: 2px solid; margin: 5px; padding-top: 3px;}/* insertando línea horizontal en CSS en vez de crearla con <hr> en HTML */
+              .vertebrados{list-style: none;}/* list-style define la apariencia-lista */
+            </style>  <!-- forzando que "Uso de bloques tome la estética de un h2, a pesar de formar parte del h1" -->
+    </header>
+
+    <nav>
+        <hr> <!-- inserta una línea horizontal -->
+    </nav>
+    <main>
+        <h2> Tipos de párrafos</h2>
+        <article>
+            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque nam consequuntur alias
+                 reprehenderit quos soluta et cum dicta hic aperiam obcaecati libero aliquid        quibusdam laborum rerum facere ut, tempore aliquam?
+                </pre> <!-- párrafo preformateado. Sólo xa presentar código, poesía... -->
+         <h2> Listas</h2>
+         <h3> Tipos de vertebrados</h3>
+         <ul class="vertebrados">
+             <li>Peces</li>
+             <li>Reptiles
+                 <ol><!-- ordena numéricamente -->
+                     <li>tortugas</li>
+                     <li>cocodrilos</li>
+                     <li>lagartos</li>
+                     <li>serpientes</li>
+                 </ol>
+             </li>
+             <li>Aves
+                 <ol start="5"><!-- Sublistas: anidando una lista dentro de otra. Los ul sólo pueden contener <li> (no otro ul p.ej. que en este caso debe ir dentro de una <li>) -->
+                     <li>Rapaces</li>
+                     <li>Exóticas</li>
+                 </ol>
+             </li>
+             <li>Mamíferos</li>
+         </ul>
+         <h3>Definiciones</h3>
+            <dl> <!-- listas de definiciones -->
+                <dt>HTML.</dt> <!-- elemento término -->
+                <dd> Leguaje-marcas</dd><!-- elemento definición -->
+                <dt>CSS.</dt>
+                <dd>Leguaje-estilos</dd>
+                <dt>JS.</dt>
+                <dd> Leguaje-scripts</dd>
+            </dl>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><!-- fuerza salto de línea --> Itaque nam consequuntur alias, reprehenderit quos soluta et cum dicta hic aperiam obcaecati libero aliquid quibusdam laborum rerum facere ut, tempore aliquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nam consequuntur alias, reprehenderit quos soluta et cum dicta hic aperiam obcaecati libero aliquid quibusdam laborum rerum facere ut, tempore aliquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nam consequuntur alias, reprehenderit quos soluta et cum dicta hic aperiam obcaecati libero aliquid quibusdam laborum rerum facere ut, tempore aliquam?</p>
+        </article>
+        <article>   <!-- DETAILS-SUMMARY / DIALOG. Etiquetas muy nuevas en HTML5. Aún por implementar / no usar -->
+            <h2>Desplegables</h2>
+            <details> 
+                <summary>Diseño web</summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex expedita dolorem eius quos optio iure laboriosam quasi, inventore amet harum cumque, exercitationem, rem ullam consectetur! Voluptatem beatae voluptates numquam perferendis!</p>
+            </details>
+            <dialog open>
+                <p>Información xtra</p>
+            </dialog>
+        </article>
+    </main>
+
+   <aside></aside>
+   <footer class="footer">
+        <address>Clara S.xxxxx@gmail.com</address>
+      Copyright
+      </footer>
+</body>
+</html>
