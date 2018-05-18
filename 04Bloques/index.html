@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bloques HTML</title>
+    <style> 
+        .subtitulo {display: block; font-size: 0.8em;}
+        .footer{border-top: 2px solid; margin: 5px; padding-top: 3px;}/* insertando línea horizontal en CSS en vez de crearla con <hr> en HTML */
+      .vertebrados{list-style: none;}/* list-style define la apariencia-lista */
+    </style>  <!-- forzando que "Uso de bloques tome la estética de un h2, a pesar de formar parte del h1" -->
 </head>
 <body>
     <header>
         <h1> Introducción al HTML.
-            <span class="subtitulo">Uso de bloques</span></h1>
-            <style> 
-                .subtitulo {display: block; font-size: 0.8em;}
-                .footer{border-top: 2px solid; margin: 5px; padding-top: 3px;}/* insertando línea horizontal en CSS en vez de crearla con <hr> en HTML */
-              .vertebrados{list-style: none;}/* list-style define la apariencia-lista */
-            </style>  <!-- forzando que "Uso de bloques tome la estética de un h2, a pesar de formar parte del h1" -->
-    </header>
+            <span class="subtitulo">Uso de bloques</span></h1><!-- class xa darle formato en CSS -->
+   </header>
 
     <nav>
         <hr> <!-- inserta una línea horizontal -->
     </nav>
+  
     <main>
         <h2> Tipos de párrafos</h2>
         <article>
