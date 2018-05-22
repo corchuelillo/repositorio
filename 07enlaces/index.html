@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enlaces</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: crimson
+        }
+        a {
+            text-decoration: none; /* elimina el "aspecto de hiperenlace" (quita el subrayado típico de un link) */
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.google.com">
+        <header>
+               <h1>Enlaces</h1><!-- Se podría meter cualquier elemento dentro del texto del hiperenlace, aunque no es demasiado habitual definir todo un header como enlace! -->
+        </header>
+    </a>
+    <a href="http://google.com"><img src="fav_icon.png" alt="imagen enlace a google"></a><!-- imagen funcionando como enlace -->
+    <a href="http://google.com">
+        <blockquote cite="https://es.wikipedia.org/wiki/Servidor_web"> "Un <strong>servidor web</strong> o servidor <abbr title="Hypertext Transfer Protocol">HTTP</abbr> es un programa informático que procesa una aplicación del lado del servidor, realizando conexiones bidireccionales y/o unidireccionales y síncronas o asíncronas con el cliente y generando o cediendo una respuesta en cualquier lenguaje o Aplicación del lado del cliente".</blockquote> <!-- tb un bloque (párrafo, etc) puede funcionar como enlace -->
+    </a>
+    <p><a href="http://google.com" target="_blank">Enlace google</a></p>
+    <a href="./extra.html">Información extra</a> <!--
+        - Enlace relativo al documento, busca en la carpeta en la que estamos. Escribiendo ../ se sube un nivel en la estructura de carpetas.
+        - Un enlace relativo a la raíz (ej. /extra.html") buscaría directamente en la carpeta raíz, no en las subcarpetas -->
+    
+</body>
+</html>
