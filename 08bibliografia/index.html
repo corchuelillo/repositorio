@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bibliografia</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            padding: 40px;
+        }
+            li[itemprop="titulo"]{ /* danto estilo a un atributo */
+                color: brown; font-style: oblique;
+                }
+            li[itemprop="name"]{ /* danto estilo a un atributo */
+                color: brown; font-style: oblique;
+               }
+            .reseña {
+                color:slategrey; /* dando estilo a una class de microformato. Se hace igual q xa una class normal */
+            }   
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Bibliografía</h1>
+    </header>
+    <article>
+        <ul itemscope="list"><!-- añadiendo microdatos -->
+            <li itemprop="titulo">El hielo en el fin del mundo</li><!-- microdatos -->
+            <li class="autor">Mark Richard</li>
+            <li class="editorial">Editorial: Dirty Works</li>
+            <li class="fechaEdicion">2016</li>
+            <li class="paginas">152 págs.</li>
+            <li class="reseña">"El litoral de los pantanos de Louisiana está plagado de cosas naufragadas. Hay serpientes, perros incendiados, ratas, restos de civilizaciones indias, madera a la deriva, fosas vacías, niños con branquias, casas sobre pilotes carcomidos, barcas con nombres de mujeres que se marcharon hace tiempo, árboles que se derrumban, disparos en la espesura, cadáveres arrastrados por la corriente, chatarra oxidada y gente que se va a pique. Estas son sus historias. Así se ama y así se sangra en las marismas.
+            Mark Richard bucea en las vidas de los golfos y los marginados para mostrarnos la humanidad soterrada de los habitantes de los pantanos. La otra cara de lo que alguien sin escrúpulos llamó en su día «El Gran Sueño Americano»."</li>
+        </ul>
+
+        <ul itemscope itemtype="http://schema.org/Book">
+            <li itemprop="name">Utopía</li>
+            <li itemprop="author" >Tomás Moro</li>
+            <li itemprop="publisher" itemtype="http://schema.org/Organization">
+                <span itemprop="name">Rialp</span></li> --> 
+            <li itemprop="copyrightYear">2013</li>
+            <li itemprop="numberOfPages">208 págs.</li>
+            <li class="reseña">"El interés histórico, social y político de la célebre Utopía de Tomás Moro ha ido en aumento con el paso del tiempo, como se refleja en sus múltiples traducciones. La presente edición de Andrés Vázquez de Prada, autor de la excelente biografía Sir Tomás Moro (Rialp), ofrece al lector una traducción cuidadosa y paciente, fiel al texto original. Su interesante introducción y la claridad de sus notas contribuyen a hacer aún más apasionante la lectura de esta amena reflexión humana y social."</li>
+        </ul>
+        
+        <div>
+            <p>
+                <span data-titulo="ensayo">Utopía</span> es relato ensayístico de <span data-autor="señorcete"></span> R.R. Tolkien</span> <!-- data-loquesea sirve para que cualquier atributo que queramos utilizar valide. Si pusiéramos sólo <span titulo=""> no validaría en ningún navegador -->
+            </p>
+        </div>
+    </article>
+    <aside>
+        <h2>Presentación "El Hielo en el fin del mundo</h2>    
+        <div class="vevent" id="hcalendar-Presentación-Hielo-finMundo"><!-- class hCalendar -->
+                <a class="url" href="http://www.casadelibro.com">
+                    <time datetime="2018-05-23T17:00" class="dtstart">May 23, 2018 17:00 </time>            –<time datetime="2018-05-23T20:00" class="dtend">20:00</time> <br/>
+                    <span class="summary">Presentación de El Hielo en el fin del mundo y firma de ejemplares</span><br/> At <span class="location">C/Pez. Madrid</span></a>
+
+                <p style="font-size: smaller;">This <a href="http://microformats.org/wiki/hcalendar">hCalendar event</a> brought to you by the <a href="http://microformats.org/code/hcalendar/creator">hCalendar Creator</a>.</p></div>
+    </aside>
+
+    <footer>
+        <!-- <adress>Clara Sansegundo</adress> -->
+        <div id="hcard-Clara-Is-Sanse" class="vcard"><!-- class hCard. Generado automáticamente desde http://microformats.org/code/hcard/creator -->
+                <span class="fn n">
+                   <span class="given-name">Clara</span>
+                 <span class="additional-name">Sanse</span>
+                 <span class="family-name">Wtf</span>
+               </span>
+                <div class="org">Lamia</div>
+                <div class="adr">
+                 <div class="street-address">del pez</div>
+                 <span class="locality">Madrid.</span>
+               , <!-- genera un salto de línea -->
+                 <span class="region">Madrid.</span>
+                
+                 <span class="postal-code">28025</span>
+               
+                 <span class="country-name">Spain</span>
+               
+                </div>
+               <p style="font-size:smaller;">This <a href="http://microformats.org/wiki/hcard">hCard</a> created with the <a href="http://microformats.org/code/hcard/creator">hCard creator</a>.</p>
+               </div>
+        &copy;Libre difusión
+    </footer>
+</body>
+</html>
