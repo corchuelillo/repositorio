@@ -1,0 +1,16 @@
+h3, .verde {     /*se pueden dar estilo a varios selectores, ya sean etiquetas, clases... separándolos entre sí con ",". Esto es agrupar selectores  */
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 900;
+}
+h2.verde{
+    color:olive;
+        }
+/* Se puede tb. combiar una etiqueta con una class, p.ej. p .verde > útil x si se quiere utilizar una misma clase con distintos valores. CUIDADO, se debe escribir la etiqueta y su class separada por "." sin espacios entre s!!*/
+
+.art1 h3{ /* elementos h3 que estén contenidos dentro de la clase X. Limita que sólo se aplique el estilo a determinados elementos que sólo lleven esa class. En este caso tenemos 2 h3, pero esta prop. sólo se aplica a este encabezado concreto. */
+    color:blue;
+}
+p.verde {
+    color:lime;
+    }

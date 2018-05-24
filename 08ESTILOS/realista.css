@@ -1,0 +1,26 @@
+/* SELECTORES DE DESCENDIENTES */
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    color:crimson;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer p{ /* Selector descendiente. delimita que sólo los párrafos del footer eliminen el espacio entre párrafos  */
+    margin-top: 0rem;
+    background-color: rgb(209, 183, 183);
+}
+footer {
+    clear:both; /* ??? `pendiente de explicar */
+}
+
+main p {
+    width: 15%; 
+    float:left;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+footer>p {} /* Selector hijo. Tomaría sólo las propiedades del inmediatamente anterior, no de los ascendientes de éste. */
+

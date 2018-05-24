@@ -1,0 +1,8 @@
+body {
+    background-color:cadetblue;
+    font-size: 2rem; /* No se refleja en la página a la que se ha enlazado (style.css) pq siempre toma el último estilo definido  */
+}
+.directiva {
+    color:blue
+
+}

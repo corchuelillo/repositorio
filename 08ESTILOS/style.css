@@ -1,0 +1,6 @@
+@import url("extras.css"); /* Importar hojs de estilo. CUIDADO! La directiva import sólo funciona en la primera línea */
+
+ body{
+    background-color: #ffbf507d;
+    border: 3px; /* propiedad no "hereditaria" */
+} 
