@@ -1,0 +1,38 @@
+.boton {
+    width: 10rem;
+    border: 2px solid;
+    border-radius: 20%;
+    background-color: aquamarine;
+    padding: 2rem;
+}
+.boton:hover {
+    color:brown;
+    background-color: azure;
+}
+.boton:visited{
+    color:crimson;
+}
+section.parte1 p::first-letter {
+    font-size: 2rem;
+}
+section.parte1 p::first-line {
+    color:blue
+}
+section.parte1 :nth-last-of-type(1) {
+    margin-top: 1rem;
+}
+
+
+section.parte2 :nth-last-of-type(2) {
+    color:fuchsia
+}
+section.parte2 p::first-letter {
+    font-size: 2rem;
+
+/*p::before {  añadiendo contenido decorativo con CSS. Cuidado! En este caso la frase no tenga valor en cuestión de contenido, es meramente decorativo. Se usa más bien para comillas, asteriscos, etc */
+    content: "Cicerón dijo: "
+}
+p::after {
+    content: " Revisado"
+    }
+
