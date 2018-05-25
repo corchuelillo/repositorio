@@ -22,5 +22,17 @@ main p {
     margin-left: 2rem;
 }
 
-footer>p {} /* Selector hijo. Tomaría sólo las propiedades del inmediatamente anterior, no de los ascendientes de éste. */
+article p[data-autor] { /* atributo como selector de estilos. A todos los párrafos dentro de articulo */
+    color:brown;
+}
+
+article p [data-autor] { /* ESPACIO!! atributo como selector de estilos. A todos los atributos data-author que estén dentro de un párrafo
+    color:brown;
+}
+/* im */
+p.verde{}/* aplicaría el estilo a todos los párrafos con la clase verde */
+p .verde{} /* el espacio indicaría que sólo los párrafos que tuvieran la clase verde llevarían el estilo */
+
+
+ /* footer>p {} Selector hijo. Tomaría sólo las propiedades del inmediatamente anterior, no de los ascendientes de éste. */
 
