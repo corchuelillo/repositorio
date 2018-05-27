@@ -26,12 +26,12 @@ article p[data-autor] { /* atributo como selector de estilos. A todos los párra
     color:brown;
 }
 
-article p [data-autor] { /* ESPACIO!! atributo como selector de estilos. A todos los atributos data-author que estén dentro de un párrafo
+article p [data-autor] { 
     color:brown;
-}
+}/* ESPACIO!! atributo como selector de estilos. A todos los atributos data-author que estén dentro de un párrafo
 /* im */
-p.verde{}/* aplicaría el estilo a todos los párrafos con la clase verde */
-p .verde{} /* el espacio indicaría que sólo los párrafos que tuvieran la clase verde llevarían el estilo */
+p.verde{}/* aplicaría el estil sólo a todos los párrafos con la clase verde */
+p .verde{} /* se aplicaría a todos los elementos con clase verde que estuvieran dentro de un párrafor */
 
 
  /* footer>p {} Selector hijo. Tomaría sólo las propiedades del inmediatamente anterior, no de los ascendientes de éste. */
