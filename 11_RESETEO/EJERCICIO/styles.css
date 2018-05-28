@@ -4,21 +4,27 @@
      body {
         font-family:'Times New Roman', Times, serif;
         font-size: 1rem;
-        padding:2rem;
         margin:2%;
         background-color:lightgray;
     }
 
-    header, h1, h2, img, p {
-        padding-left: 1rem;
-        padding-right: 1rem;
+      header, h1, h2, img, p {
+        padding-left: 2rem;
+        padding-right: 2rem;
         padding-top: 0.5rem;
-       padding-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-align: justify;
     }
 
+    footer {
+        padding: 2rem;
+        background-color: darkgrey;
+        font-size: 0.8rem;
+    }
+    
     ul {
-        padding-left: 3rem;
-        padding-right:3rem;
+        padding-left: 4rem;
+        padding-right:4rem;
     }
 
     h1 {
@@ -41,6 +47,6 @@
     a:active{
         color:blue;
              }
-    a:visited{
+    /* a:visited{
         color:blueviolet;
-    }
+    } */
