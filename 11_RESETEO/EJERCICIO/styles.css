@@ -1,0 +1,46 @@
+
+     /* DEFINICIÓN DE ESTILOS */
+     
+     body {
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1rem;
+        padding:2rem;
+        margin:2%;
+        background-color:lightgray;
+    }
+
+    header, h1, h2, img, p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+       padding-bottom: 0.5rem;
+    }
+
+    ul {
+        padding-left: 3rem;
+        padding-right:3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    h2 {
+        font-size:1.5rem;
+        font-weight: 900;
+    }
+    strong {
+        font-weight: 900;
+    }
+    cite {
+        font-style:oblique;
+    }
+    a:hover{
+        color:red;
+    }
+    a:active{
+        color:blue;
+             }
+    a:visited{
+        color:blueviolet;
+    }

@@ -1,0 +1,19 @@
+:root { /* la etiqueta :root sirve para almacenar la declaración de variables */
+--color-primary:burlywood;
+--color-secondary: brown;
+--aire: 1rem;
+}
+
+
+header {
+    background-color: var(--color-primary); /* en el valor se llamaría a la variable previamente definida > var(nombrevariable) */
+    color: var(--color-secondary);
+    }
+header h1 {
+    padding: var(--aire);
+}
+/* Es muy útil, ya que de hacer cambios en los valores, sólo se deberían hacer en la definición de la variable y automáticamente se aplicarían en todos los atributos que tuvieran como valor la variable */
+
+header h1 {
+    padding: calc(var(--aire) * 2rem; 
+}

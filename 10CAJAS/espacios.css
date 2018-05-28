@@ -1,0 +1,34 @@
+/* Reset */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {                
+    box-sizing: border-box;
+} /* todos los CSS deben empezarse con esta línea para que las cajas al contabilizar el contenido lo haga desde el border para dentro y no desde el margin. En este caso, al aumentar p.ej. el padding, no "rescalaría" el tamaño de las cajas */
+
+/* Layout. Distribución-espacios */
+body {
+    margin: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p:not(:last-child){ 
+    margin-right: 2%;
+}       /* Indica que todos los párrafos, menos el último tengan un margen drcho. */
+
+p {
+    width: 20%; /* Afecta al contenido completo, entendiendo el padding, el border como parte del contenido */
+    float: left;
+    padding: 1rem;
+    margin-left: 2%;
+    }
+
+p:nth-child(odd) {
+    background-color:aquamarine;
+    border: 2px solid aqua;
+}
+p:nth-child(even){
+    background-color: coral;
+    border: 2px solid crimson;
+}

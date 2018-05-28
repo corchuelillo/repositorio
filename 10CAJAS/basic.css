@@ -1,0 +1,23 @@
+
+
+p {
+    padding: 1rem;
+    margin: 1rem;
+    width: 40%;
+    border: 1px solid;
+    background-color: bisque; /* el background va en la capa de fondo, detrás de toda las demás */
+}
+
+span {
+    border: 1px solid;
+    margin: 1rem; /* sólo actúa sobre lso márgenes izdo y drcho. No superior inferior */
+    padding: 2rem; /* Da aire alrededor de todo el elemento por el interior de la caja */
+    background-color: aqua;
+
+}
+div p { /* Forzamos que la altura sea menor que el contenido xa probar la propiedad overflow */
+    width: 30%;
+    height: 4rem;
+   /* overflow:hidden;  El valor oculta el contenido que desborda la caja */
+   overflow: auto; /* el contenido que desborda se convierte en scrolleable. Tambén con la propiedad scroll, pero saca un scroll vertical y otro horizontal */
+}
