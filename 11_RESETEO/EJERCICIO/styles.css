@@ -4,29 +4,37 @@
      body {
         font-family:'Times New Roman', Times, serif;
         font-size: 1rem;
-        margin:2%;
         background-color:lightgray;
     }
 
-      header, h1, h2, img, p {
+    main, nav, aside {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+      header, h1, h2, img, p, nav {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         text-align: justify;
     }
-
+  
     footer {
-        padding: 2rem;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
         background-color: darkgrey;
         font-size: 0.8rem;
     }
-    
-    ul {
-        padding-left: 4rem;
-        padding-right:4rem;
+    li {
+        display: inline-block;
     }
-
+    
+    a {
+        padding-right:1rem; 
+    } 
     h1 {
         font-size: 2rem;
         font-weight: 900;
