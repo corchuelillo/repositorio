@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tablas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Datos del estudio</h1>
+    </header>
+    <article>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quis explicabo esse. Temporibus odit quod blanditiis
+            impedit fugiat tenetur expedita quae vitae, excepturi velit beatae consequuntur asperiores molestiae animi quasi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quis explicabo esse. Temporibus odit quod blanditiis
+            impedit fugiat tenetur expedita quae vitae, excepturi velit beatae consequuntur asperiores molestiae animi quasi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quis explicabo esse. Temporibus odit quod blanditiis
+            impedit fugiat tenetur expedita quae vitae, excepturi velit beatae consequuntur asperiores molestiae animi quasi.</p>
+        <!-- CREACIÓN DE TABLAS -->
+
+
+        <!--<table border="1"> el atributo border no se usa. Lo hacemos aquí excepcionalmente -->
+        <table>
+            <thead>
+                <tr>
+                    <!-- "table row" = cada fila -->
+                    <th></th>
+                    <!-- table data = cada celda -->
+                    <th>Altura</th>
+                    <th>Peso</th>
+                </tr>>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Grupo 1</th>
+                    <!-- "table header" indica cabecera de fila. Interesante a nivel semántico. Por defecto lo marca en negrita -->
+                    <td>1.80</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <th>Grupo 2</th>
+                    <td>1.73</td>
+                    <td>73</td>
+                </tr>
+                <tr>
+                    <th>Grupo 3</th>
+                    <td>1.69</td>
+                    <td>70</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Medias</th>
+                    <td>1.75</td>
+                    <td>71</td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+    <!-- MERGE CELDAS -->
+    <article>
+        <h2>Vacaciones</h2>
+        <table class="tabla2">
+            <tr>
+                <th colspan="2" rowspan="2"></th>
+                <th colspan="3">Edades</th>
+            </tr>
+            <tr>
+                <th>Hasta 20 </th>
+                <th>21-40</th>
+                <th>Más de 40</th>
+            </tr>
+            <tr>
+                <th rowspan="4">Destinos</th>
+                <td>Europa</td>
+                <td>20</td>
+                <td>20</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Caribe</td>
+                <td>20</td>
+                <td>40</td>
+                <td>40</td>
+                
+            </tr>
+            <tr>
+                <td>Disney</td>
+                <td>25</td>
+                <td>50</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                    <td>Otros</td>
+                    <td>20</td>
+                    <td>70</td>
+                    <td>10</td>
+
+
+            </tr>
+        </table>
+    </article>
+
+</body>
+
+</html>

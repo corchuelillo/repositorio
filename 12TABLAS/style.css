@@ -1,0 +1,26 @@
+th, td {
+    padding:0.5rem 2rem; /* truco xa padding margin y border. Si le damos 2 valores entiende que el primero es arriba y abajo. Si le damos 4 valores sería arriba, drcha, abajo, izda. */
+}
+th {
+    background-color: brown;
+    color:white;
+}
+td {
+    background-color: blanchedalmond;
+}
+
+table.tabla2 {
+    border-spacing: 4px;
+    empty-cells: hide; /* Hace que apareczan ocultas las celdas vacías */
+}
+/* CREANDO UN COLOR ALTERNO XA FILAS IMPARES/PARES. */
+table.tabla2 tr:nth-child(odd) td {
+    background-color:silver;
+}
+table.tabla2 tr:nth-child(even) td {
+    background-color:sandybrown;
+}
+
+/* tr:nth-child(even){
+    background-color: white;
+} */
