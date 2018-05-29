@@ -1,0 +1,26 @@
+body {
+    margin: 2rem 3rem;
+}
+
+figure { /* esta etiqueta tiene un estilo predefinido, con márgenes. Aquí se lo quitamos */
+    display: block;
+    margin: 0;
+}
+
+figure { /* Damos un tamaño al contenedor */
+    width: 30%;
+    border: 1px solid;
+   }
+
+   figcaption {
+       color:blue;
+       text-align: center;
+   }
+
+/*----------------------- IMG RESPONSIVE ------------------*/
+
+img { /* imagen responsive: se adapta al tamaño de su padre (div). En este caso, al darle los dos parámetros deformaría la imagen. Debe darse sólo un valor */
+    width: 100%;
+    max-width: 800px; /* Se limita el tamaño máximo (al tamaño real de la img) para evitar que se reescale y deforme en distintos tamaños de pantalla. */
+    display: block; /* hace manejar la imagen como una estructura de bloque, no de línea. De esta forma se ajusta perfectamente al espacio definido an el div (si no, al ser un elemento inline deja una base-line como con la tipografía) */
+}
