@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multimedia</title>
+    <style>
+        .cam {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Multimedia en la web</h1>
+    </header>
+    <!-- ETIQUETAS PARA ELEMENTOS EMBEBIDOS -->
+    <div>
+        <img src="./ASSET/komodo.jpg" alt="dragón de komodo agresivo" title="National Geographic">
+    </div>
+    <div>
+        <h2>Ejemplo de object</h2>
+        <object data="./ASSET/gato.mp4" type="video/mp4"> </object>
+        <!-- pensado xa embeber cualquier cosa. P.ej. un archivo word, siempre que el navegador-usuario tenga un plugin xa verlo para poderlo ver -->
+    </div>
+    <div>
+        <h2> Elemplo de embed</h2>
+        <!-- Tb. puede embeber cualquier cosa -->
+        <embed src="./ASSET/gato.mp4" type="video/mp4">
+    </div>
+
+    <div>
+        <h2> Ejemplo de IFRAME</h2>
+        <div class="cam">
+            <iframe src="http://www.madrid.org/cs/Satellite?pagename=ComunidadMadrid/Home"></iframe>
+            <!-- embebe otra página web -->
+        </div>
+    </div>
+
+    <div class="maru">
+        <h2>Iframe de youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xVV0pNoU43w" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xVV0pNoU43w?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="mivideo">
+        <h2>ej. Vídeo propio</h2>
+        <video src="./ASSET/gato.mp4" controls></video>
+        <!-- -->
+    </div>
+    <div>
+        <h2>Ejemplo de video-source </h2>
+        <video>
+            <source src="./ASSET/gato.mp4" type="video/mp4">
+            <source sre="./ASSET/videoplayback.webm" type="video/webm">
+            <!-- Etiqueta source. Van dentro de <video>. Sirve xa dar una fuente alternativa. Interesante p.ej. si hay algún navegador que no entienda uno de los formatos que pueda cargar el otro. Si entiende los dos s´lo cargará uno de ellos -->
+        </video>
+    </div>
+
+</body>
+
+</html>
